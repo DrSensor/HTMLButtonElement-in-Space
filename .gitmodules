@@ -1,0 +1,3 @@
+[submodule "utils"]
+	path = vendor/js13k-utils
+	url = git@github.com:DrSensor/js13k-utils.git

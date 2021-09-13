@@ -62,6 +62,6 @@
     "@parcel/transformer-image": "next",
     "@parcel/transformer-worklet": "next",
     "parcel": "next",
-    "jsx13k": "file:./vendor/nojsx"
+    "jsx13k": "file:./vendor/js13k-utils"
   }
 }
