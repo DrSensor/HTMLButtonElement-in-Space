@@ -1,0 +1,41 @@
+{
+    "extends": "@parcel/config-default",
+    "transformers": {
+        "*.{jpeg,jpg,png,webp,tiff,heic,heif,avif,raw}": [
+            "@parcel/transformer-image",
+            "..." // comment, build, then uncomment this line when transforming to .avif
+        ],
+        "*.glsl": [
+            "@parcel/transformer-glsl",
+            "..."
+        ],
+        "*.worklet.{js,ts,wasm}": [
+            "...",
+            "@parcel/transformer-worklet"
+        ]
+    },
+    "optimizers": {
+        "*.{jpeg,jpg,png}": [
+            "...",
+            "@parcel/optimizer-image"
+        ],
+        "*.svg": [
+            "...",
+            "@parcel/optimizer-svgo"
+        ],
+        "blob-url:*": [
+            "...",
+            "@parcel/optimizer-blob-url"
+        ],
+        "*.{js,jsx,ts,tsx}": [
+            "@parcel/optimizer-esbuild",
+            "..."
+        ]
+    },
+    "reporters": [
+        "...",
+        "@parcel/reporter-build-metrics",
+        // "@parcel/reporter-bundle-buddy", // cuz the report is in $target folder
+        "@parcel/reporter-sourcemap-visualiser"
+    ]
+}

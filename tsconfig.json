@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "jsx13k",
+    "baseUrl": ".",
+    "paths": {
+      "/*": ["./*"],
+      "~/*": ["./*"]
+    },
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "isolatedModules": true
+  }
+}

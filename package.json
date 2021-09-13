@@ -1,0 +1,67 @@
+{
+  "name": "js13k",
+  "version": "2021.08.13",
+  "targets": {
+    "desktop": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "engines": { "browsers": ["Firefox 94"] },
+      "isLibrary": true,
+      "optimize": true,
+      "sourceMap": false
+    },
+    "mobile": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "engines": { "browsers": ["Android 93", "iOS 14"] },
+      "isLibrary": true,
+      "optimize": true,
+      "sourceMap": false
+    },
+    "xr": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "engines": { "browsers": ["Chrome 96", "iOS 14"] },
+      "isLibrary": true,
+      "optimize": true,
+      "includeNodeModules": {
+        "playcanvas": false,
+        "aframe": false,
+        "babylonjs": false,
+        "three": false
+      },
+      "sourceMap": false
+    },
+    "server": {
+      "context": "node",
+      "outputFormat": "commonjs",
+      "engines": { "node": "8.*" },
+      "isLibrary": true,
+      "optimize": true,
+      "includeNodeModules": { "socket.io": false },
+      "sourceMap": false
+    }
+  },
+  "alias": {
+    "socket.io": { "global": "io" },
+    "playcanvas": { "global": "pc" },
+    "babylonjs": { "global": "BABYLON" },
+    "three": { "global": "THREE" }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/config-default": "next",
+    "@parcel/optimizer-blob-url": "next",
+    "@parcel/optimizer-esbuild": "next",
+    "@parcel/optimizer-image": "latest",
+    "@parcel/optimizer-svgo": "next",
+    "@parcel/reporter-build-metrics": "next",
+    "@parcel/reporter-bundle-buddy": "next",
+    "@parcel/reporter-sourcemap-visualiser": "next",
+    "@parcel/transformer-glsl": "next",
+    "@parcel/transformer-image": "next",
+    "@parcel/transformer-worklet": "next",
+    "parcel": "next",
+    "jsx13k": "file:./vendor/nojsx"
+  }
+}
