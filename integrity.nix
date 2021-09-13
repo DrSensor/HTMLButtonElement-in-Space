@@ -1,4 +1,6 @@
 {
+  dlint.x86_64-linux.sha256 = "1l2a2f7vvnwvawqc6jm5mcp13f3xarszgslbfcq23ck2d8xl3zi0";
+  dprint.x86_64-linux.sha256 = "0iqk7fj2qcwzbyxjj0zyzjmhs0m2xsqffx1p7bks7xhd1r6lryjc";
   # use `nix run -- nixpkgs#nix-prefetch fetchzip --url -E "https://github.com/${owner}/${repo}/releases/latest/download/${name}-${target}.zip""`
   # dprint.x86_64-linux.sha256 = "";
   # dlint.x86_64-linux.sha256 = "";
