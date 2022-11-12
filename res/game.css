@@ -1,0 +1,8 @@
+svg * {
+    transform-box: fill-box; /* https://stackoverflow.com/a/62720107/5221998 */
+    transform-origin: center;
+}
+button {
+    width: 100px;
+    height: 150px;
+}
